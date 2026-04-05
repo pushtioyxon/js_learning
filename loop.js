@@ -1,41 +1,37 @@
-// # RAQAMLAR CHIQARISH
+// ? # RAQAMLAR CHIQARISH
 
-// 1. ichidagi o'zgaruvchining scope, i faqat for loop ichida mavjud, whileda esa u global bo'lib qoladi
-// 2. 0 dan 9 gacha chiqishi uchun oxiriga i++ qilamiz, yoki 1 dan 10 gacha chiqishi uchun boshiga i++
+//* 1. ichidagi o'zgaruvchining scope, i faqat for loop ichida mavjud, whileda esa u global bo'lib qoladi
+//*2. 0 dan 9 gacha chiqishi uchun oxiriga i++ qilamiz, yoki 1 dan 10 gacha chiqishi uchun boshiga i++
 
 // for (let i = 0; i < 10; i++) {
-//     console.log(i);
+//   console.log(i);
 // }
 
 // let i = 0;
 // // For loop bilan bir xil 0 dan 9 gacha chiqaradi
 // while (i < 10) {
-
-//     console.log(i);
-
-//     i++; // chunki i++ oxirida bajariladi
+//   console.log(i);
+//   i++; // chunki i++ oxirida bajariladi
 // }
 
 // i = 0;
 // // bu yerda 1 dan 10 gacha chiqaradi
 // while (i < 10) {
-
-//     i++; // chunki i++ birinchi bajarilayapti
-
-//     console.log(i);
+//   i++; // chunki i++ birinchi bajarilayapti
+//   console.log(i);
 // }
 
-// Eng katta umumiy bo'luvchi
+// * 2 Eng katta umumiy bo'luvchi
 
 // a = 10;
 // b = 20;
 
-// min = (a < b) ? a : b; // 10 agar a kichik bulsa a dan a olinsin 
+// min = (a < b) ? a : b; // 10 agar a kichik bulsa a dan a olinsin
 // // agar bunday bulmasa b olinsin shunda eng kichigi olinadi
 
 // ekub = 1; // 2
 
-// // 
+// //
 // // to'g'ridan to'g'ri topish usul, eng oxirigisi kattasi bo'lib chiqadi
 // for (let i = 2; i <= min; i++) { // i = 2 .. 10 // i = 5
 
@@ -46,7 +42,7 @@
 // }
 
 // console.log(ekub);
-///////////////////////////////////
+// /////////////////////////////////
 
 // for (let i = min; i >= 2; i--) { // i = 10 .. 2 // i = 2
 
@@ -66,7 +62,7 @@
 
 // console.log(ekub);
 
-// ? Tub sonlarni aniqlash
+// ? 3 Tub sonlarni aniqlash
 
 // let n = 33;
 
@@ -89,7 +85,7 @@
 //     console.log("Tub emas");
 // }
 
-// ? count algoritmi
+// ? 4 count algoritmi
 
 // n = 38;
 
@@ -112,7 +108,7 @@
 //     console.log("Tub emas");
 // }
 
-// ? SQRT algoritmi
+// ? 5 SQRT algoritmi
 
 // let n = 68;
 
@@ -127,7 +123,7 @@
 //     }
 // }
 
-// flag algoritmi bilan
+// ? 6 flag algoritmi bilan
 // let sqrt = -1;
 
 // for (let i = 1; i < n; i++) { // i = 1..63
@@ -189,17 +185,17 @@
 
 // User kiritgan raqam asosida takrorlash
 
-const prompt = require("prompt-sync")();
+// const prompt = require("prompt-sync")();
 
 // // takrorlanishlar soni aniq, for loop ishlatiladi
 // let amount = +prompt("Necha marta: ");
 
 // for (let i = 0; i < amount; i++) {
-  //     console.log("Hello");
-  // }
-  
+//     console.log("Hello");
+// }
+
 // function randint(min, max) {
-//   min = Math.ceil(min); // eng kattasi 3.4 = 4 
+//   min = Math.ceil(min); // eng kattasi 3.4 = 4
 //   max = Math.floor(max); // eng kichik 3.4 = 3
 //   return Math.floor(Math.random() * (max - min + 1)) + min;
 // }
@@ -224,7 +220,6 @@ const prompt = require("prompt-sync")();
 // while (true) {
 //     console.log("Hello");
 // }
-
 
 /// Number xonalarining sanog'i yig'indisi ko'paytmasi
 // let number = 55; // 0
@@ -251,34 +246,28 @@ const prompt = require("prompt-sync")();
 //   // console.log(number);
 // }
 
-
 // console.log(count);
 // console.log(sum);
 // console.log(mul);
 
-
 /// ? REVERSE Number
 
-// let number = 1234;
+let number = 1234;
 
 // console.log(number);
 
-
 // //*  xonalar sonini hisoblash
-// count = 0;
-// let num1 = number
-// while (num1 != 0) {
+count = 0;
+let num1 = number
+while (num1 != 0) {
+  count++;
+  num1 = Math.floor(num1 / 10)
+}
 
-//   count++;
-  
-//   num1 = Math.floor(num1 / 10)
-// }
-
-// yangi o'zgaruvchiga terish
+// ?  yangi o'zgaruvchiga terish
 // let number2 = 0;
 // let num2 = number;
 // let i = 1;
-
 
 // while (num2 != 0) {
 
@@ -288,15 +277,13 @@ const prompt = require("prompt-sync")();
 //   // 10 ** (count - i)              - o'sha xonani o'ziga o'tkazish uchun, masalan 10^3 = 1000
 //   // 10 ** (count - i) * num2 % 10  - o'sha xonaning raqamini hisoblash
 //   number2 = number2 + ((10 ** (count - i)) * (num2 % 10))
-  
+
 //   num2 = Math.floor(num2 / 10)
 
 //   i++;
 // }
 
-
 // console.log(number2);
-
 
 // let running = true;
 
@@ -318,4 +305,3 @@ const prompt = require("prompt-sync")();
 //       console.log("Noma'lum buyruq!");
 //   }
 // }
-

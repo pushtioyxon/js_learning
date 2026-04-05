@@ -1,72 +1,72 @@
-const prompt = require("prompt-sync")();
-let h = prompt(" horizantal qiymat kiriting");
-let v = prompt("vertikal qiyymat kiriting");
+// const prompt = require("prompt-sync")();// terminalda zapros uchun
+// let h = prompt(" horizantal qiymat kiriting"); 
+// let v = prompt("vertikal qiyymat kiriting");
 
-switch (h) {
-  case "a":
-    h = 1;
-    break;
-  case "b":
-    h = 2;
-    break;
-  case "c":
-    h = 3;
-    break;
-  case "d":
-    h = 4;
-    break;
-  case "e":
-    h = 5;
-    break;
-  case "f":
-    h = 6;
-    break;
-  case "g":
-    h = 7;
-    break;
-  case "h":
-    h = 8;
-    break;
-  default:
-    console.log("Noto'gri qiymat kiritilgan");
-}
+// switch (h) {
+//   case "a":
+//     h = 1;
+//     break;
+//   case "b":
+//     h = 2;
+//     break;
+//   case "c":
+//     h = 3;
+//     break;
+//   case "d":
+//     h = 4;
+//     break;
+//   case "e":
+//     h = 5;
+//     break;
+//   case "f":
+//     h = 6;
+//     break;
+//   case "g":
+//     h = 7;
+//     break;
+//   case "h":
+//     h = 8;
+//     break;
+//   default:
+//     console.log("Noto'gri qiymat kiritilgan");
+// }
 
-switch (v) {
-  case "1":
-    v = 1;
-    break;
-  case "2":
-    v = 2;
-    break;
-  case "3":
-    v = 3;
-    break;
-  case "4":
-    v = 4;
-    break;
-  case "5":
-    v = 5;
-    break;
-  case "6":
-    v = 6;
-    break;
-  case "7":
-    v = 7;
-    break;
-  case "8":
-    v = 8;
-    break;
-  default:
-    console.log("Noto'gri qiymat kiritilgan");
-}
-let hh = h % 2 == 0;
-let vv = v % 2 == 0;
+// switch (v) {
+//   case "1":
+//     v = 1;
+//     break;
+//   case "2":
+//     v = 2;
+//     break;
+//   case "3":
+//     v = 3;
+//     break;
+//   case "4":
+//     v = 4;
+//     break;
+//   case "5":
+//     v = 5;
+//     break;
+//   case "6":
+//     v = 6;
+//     break;
+//   case "7":
+//     v = 7;
+//     break;
+//   case "8":
+//     v = 8;
+//     break;
+//   default:
+//     console.log("Noto'gri qiymat kiritilgan");
+// }
+// let hh = h % 2 == 0;
+// let vv = v % 2 == 0;
 
-if ((hh == false && vv == false) || (hh == true && vv == true)) {
-  console.log("Qora");
-} else if ((hh == false && vv == true) || (hh == true && vv == false)) {
-  console.log("oq");
-}
+// if ((hh == false && vv == false) || (hh == true && vv == true)) {
+//   console.log("Qora");
+// } else if ((hh == false && vv == true) || (hh == true && vv == false)) {
+//   console.log("oq");
+// }
 //? 2
 // let a = 25;
 // let b = 25;

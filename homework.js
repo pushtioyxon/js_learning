@@ -2,12 +2,20 @@
 
 // input:
 // 1234
-// const prompt = require("prompt-sync")();
-// let num = +prompt("son kirting: ");
-// while (num != 0) {
-//   console.log(num % 10);
-//   num = Math.floor(num / 10);
-// }
+const prompt = require("prompt-sync")();
+let num = 2326;
+// +prompt("son kirting: ");
+let count = 0;
+while (num !== 0) {
+  // 0 ga teng emasligini tekshiradi
+
+  if (num % 10) {
+    count = count + num;
+    console.log(count);
+  }
+  num = Math.floor(num / 10);
+}
+
 // output:
 // 4
 // 3
@@ -18,19 +26,41 @@
 // 1234
 // const prompt = require("prompt-sync")();
 // let num = +prompt("son kirting: ");
-// let reversed = 0;
-// while (num != 0) {
-//   reversed = num * 10 + (num % 10);
-//   num = Math.floor(num / 10);
-// }
-// console.log(reversed);
+// 12,34 % 10 = 4 birlik olish
+// 1234 / 10 = floor(123.4) = 123
+// 123 % 10 = 3 o'nlik
+// 123 / 10 = floor(123.4) = 12
+// 12 % 10 = 2 yuzlik
+// 12 / 10 = floor(123.4) = 1
+// 1 % 10 = 1 minglik
+// 1 / 10 = floor(123.4) = 0
+
+// let birlik = num % 10;
+// let unlik = Math.floor((num / 10) % 10);
+// let yuzlik = Math.floor((num / 100) % 10);
+// let minglik = Math.floor((num / 1000) % 1000);
+// console.log(birlik, unlik, yuzlik, minglik);
 
 // output:
 // 4321
 // ! 3. +prompt orqali kelgan raqamlarni bitta bittalab ekranga chiqarishi kerak
 
 // input:
-// 1234
+// 12345,6
+// const prompt = require("prompt-sync")();
+// let num = +prompt("son kirting: ");
+// let birlik = Math.floor((num / 1) % 10);
+// let unlik = Math.floor((num / 10) % 10);
+// let yuzlik = Math.floor((num / 100) % 10);
+// let minglik = Math.floor((num / 1000) % 10);
+// let unming = Math.floor((num / 10000) % 10);
+// let olti = Math.floor((num / 100000) % 10);
+// console.log(olti);
+// console.log(unming);
+// console.log(minglik);
+// console.log(yuzlik);
+// console.log(unlik);
+// console.log(birlik);
 
 // output:
 // 1
@@ -73,6 +103,7 @@
 // > 14
 // < 0
 // summa: 14
+
 // ? welcome to out site
 // #include <iostream>
 
@@ -121,4 +152,3 @@
 //   }
 //   console.log("You are", str, "too.");
 // }
-// ? bankamat app

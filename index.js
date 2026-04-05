@@ -141,23 +141,23 @@
 // }
 // ? SQRT algoritmi
 
-let n = 24;
-// no flag algoritmi
-for (let i = 1; i < n; i++) {
-  if (i * i == n) {
-    console.log(i);
-    break;
-  }
-}
-// flag algoritmi  bilan
-let sqrt = 10;
-for (let i = 1; i < n; i++) {
-  if (i * i == n) {
-    sqrt = i;
-  }
-}
-if (sqrt == -1) {
-  console.log("sqrt topilmadi ");
-} else {
-  console.log(sqrt);
-}
+// let n = 24;
+// // no flag algoritmi
+// for (let i = 1; i < n; i++) {
+//   if (i * i == n) {
+//     console.log(i);
+//     break;
+//   }
+// }
+// // flag algoritmi  bilan
+// let sqrt = 10;
+// for (let i = 1; i < n; i++) {
+//   if (i * i == n) {
+//     sqrt = i;
+//   }
+// }
+// if (sqrt == -1) {
+//   console.log("sqrt topilmadi ");
+// } else {
+//   console.log(sqrt);
+// }

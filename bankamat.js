@@ -70,7 +70,7 @@ while (true) {
         console.log("Pin notogri , qaytadan urinib kuring");
       }
       if (attempt > 2) {
-        console.log("KArtangiz bloklandi, keyinroq urinib kuring");
+        console.log("Krtangiz bloklandi, keyinroq urinib kuring");
         break;
       }
     }
